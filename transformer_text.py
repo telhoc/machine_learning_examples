@@ -1,10 +1,14 @@
 # Text classification using transformers. Data files should in the format of [sentence or text \t label]
 # You need pip install transformers sentence-transformers
 import pandas as pd
+import logging
 from sentence_transformers import SentenceTransformer
 from transformers import DistilBertForSequenceClassification, Trainer, TrainingArguments
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
+
+# Setup logging
+logging.basicConfig(level=logging.INFO)
 
 # Load data
 train = pd.read_csv('train.csv', delimiter='\t', header=None, names=['text', 'label'])
