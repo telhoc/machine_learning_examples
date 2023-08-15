@@ -25,8 +25,8 @@ y_test = test['label']
 # 3. Train a Model
 #clf = LogisticRegression(max_iter=1000)
 #clf = SVC(max_iter=1000)
-clf = RandomForestClassifier()
-#clf = GradientBoostingClassifier(max_iter=1000)
+#clf = RandomForestClassifier()
+clf = GradientBoostingClassifier()
 #clf = MultinomialNB(max_iter=1000)
 #clf = KNeighborsClassifier(max_iter=1000)
 #clf = SGDClassifier(max_iter=1000)

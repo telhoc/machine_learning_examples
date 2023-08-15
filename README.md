@@ -2,4 +2,5 @@
 
 Machine learning example codes.
 
-class.py - Simple text classifier.
+class.py - Simple text classifier using scikit and standard models.
+
